@@ -92,14 +92,14 @@ export default function Swiperslide() {
        {slideData.map((slide) => (
         <SwiperSlide key={slide.id} onClick={() => handleSlideClick(slide.id)} >
           <div className={styles.cardcontainer}> 
-            {/* Link 컴포넌트로 감싼다 */}
               <div className={`${styles.card} ${clickedSlide === slide.id ? styles.mosaic : ''}`}>
                 <Image fill={true} src={slide.imageUrl} alt={slide.text} className={styles.card} />
-                {clickedSlide === slide.id && (
-                  <div className={styles.overlayText}>{slide.line}</div>
-                )} 
               </div>
-      
+              {clickedSlide === slide.id && (
+              <div className={styles.textContainer}>
+                <div className={styles.overlayText}>{slide.text}</div>
+              </div>
+              )}
           </div>
         </SwiperSlide>
         ))}

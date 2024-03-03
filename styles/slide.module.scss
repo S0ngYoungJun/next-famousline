@@ -28,13 +28,23 @@
   filter: blur(8px); // 간단한 모자이크 효과
 }
 
+.textContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* 텍스트가 마우스 이벤트를 무시하도록 설정 */
+}
+
 .overlayText {
   position: relative;
-  width:25vw;
-  height: 42.5vh;
   top: 50%;
   left: 50%;
+  width:25vw;
+  height: 42.5vh;
   transform: translate(-50%, -50%);
   color: black; // 텍스트 색상
+  font-size: 3rem;
   // 추가적인 텍스트 스타일링
 }
