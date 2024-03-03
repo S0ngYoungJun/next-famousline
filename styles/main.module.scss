@@ -1,0 +1,22 @@
+.root{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav{
+  width:15vw;
+  height:90vh;
+  display:flex;
+  background-color: lightgrey;
+}
+
+.slide{
+  width:28vw;
+  height:90vh;
+  display: flex;
+  background-color: lightblue;
+}
+
