@@ -11,15 +11,15 @@
 .cardcontainer{
   display:flex;
   width:25vw;
-  height: 40vh;
+  height: 45vh;
   flex-direction: column;
-  
+  position: relative;
 }
 
 .card{
   display:flex;
   width:25vw;
-  height: 40vh;
+  height: 42.5vh;
   position: relative;
   border-radius: 5%;
 }
@@ -29,10 +29,12 @@
 }
 
 .overlayText {
-  position: absolute;
+  position: relative;
+  width:25vw;
+  height: 42.5vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; // 텍스트 색상
+  color: black; // 텍스트 색상
   // 추가적인 텍스트 스타일링
 }
