@@ -14,6 +14,7 @@
   height: 45vh;
   flex-direction: column;
   position: relative;
+
 }
 
 .card{
@@ -34,7 +35,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* 텍스트가 마우스 이벤트를 무시하도록 설정 */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // pointer-events: none; /* 텍스트가 마우스 이벤트를 무시하도록 설정 */
 }
 
 .overlayText {
@@ -42,9 +47,14 @@
   top: 50%;
   left: 50%;
   width:25vw;
-  height: 42.5vh;
+  height: 37.5vh;
   transform: translate(-50%, -50%);
   color: white; // 텍스트 색상
-  font-size: 3rem;
-  // 추가적인 텍스트 스타일링
+  font-size: 100%;
+}
+.detailLink{
+  width:8vw;
+  height:5vh;
+  color:white;
+  position: relative;
 }

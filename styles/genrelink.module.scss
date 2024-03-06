@@ -1,0 +1,26 @@
+.linkname{
+  height: 12vh;
+  width: 15vw;
+  font-size: 170%;
+  text-decoration: none;
+  color: #18271d;
+  background-color: #CCD3CA;
+  display:flex;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+  &:hover {
+    background-color: #F1F0E8;
+    color: #18271d;
+  }
+}
+
+.side{
+  display:flex;
+  flex-direction: column;
+  width:15vw;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #CCD3CA;
+}
